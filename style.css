@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+b{
+    color: gray;
+}
+.zeroitem{
+    color: red;
+    text-align: end;
+}
+.container{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo{
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 25rem;
+    width: 65%;
+    background-color: #fff;
+    margin-top: 4rem;
+    border-radius: 1.5rem;
+    flex-wrap: wrap;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2rem;
+    height: 24rem;
+    width: 40%;
+    /* border: 4px solid red; */
+}
+.bill{
+    width: 96%;
+    height: 1.9rem;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    background-color: hsl(185, 41%, 84%);
+    font-size: larger;
+    border-radius: 0.3rem;
+    text-align: end;
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0.3rem;
+    background-size: 1rem;
+    color: gray;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Space Mono', monospace;
+}
+.people{
+    width: 96%;
+    height: 1.9rem;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    background-color: hsl(185, 41%, 84%);
+    font-size: larger;
+    border-radius: 0.3rem;
+    text-align: end;
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0.3rem;
+    background-size: 1rem;
+    color: gray;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Space Mono', monospace;
+}
+/* button and custom */
+button{
+    width: 25%;
+    margin: 0.4rem;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    
+    color: #fff;
+}
+
+.custom{
+    width: 24%;
+    margin: 0.4rem;
+    margin-top: 0.2rem;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    height: 2.3rem;
+    font-size:large;
+    border-radius: 0.4rem;
+    /* font-weight: bolder; */
+}
+/* left sidde complete */
+/* Start Right  side*/
+.second{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    justify-content: space-around;
+    width: 45%;
+    height: 22rem;
+    justify-items: center;
+    background-color: hsl(183, 100%, 15%);
+    position: relative;
+    top: 1.5rem;
+    right: 1.8rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+p{
+    width: 20%;
+    color: #fff;
+}
+#reset{
+    background-color: hsl(184, 14%, 56%);
+    width: 92%;
+}
+.tipAmount{
+    width: 50%;
+    height: 2.1rem;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    background-color: hsl(183, 100%, 15%);
+    font-size: larger;
+    border-radius: 0.3rem;
+    text-align: end;
+    color: gray;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Space Mono', monospace;
+}
+.total{
+    width: 51%;
+    height: 2.1rem;
+    
+    margin-top: 1rem;
+    margin-left: 6.8rem;
+    background-color: hsl(183, 100%, 15%);
+    font-size: larger;
+    border-radius: 0.3rem;
+    text-align: end;
+    color: gray;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Space Mono', monospace;
+}
+@media (max-width:866px){
+    .container{
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-items: center;
+        height: 55rem;
+        width: 65%;
+        background-color: #fff;
+        margin-top: 4rem;
+        border-radius: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .calculator{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 1rem;
+        height: 24rem;
+        width: 90%;
+    }
+    .bill{
+        width: 96%;
+        height: 1.7rem;
+        padding: 0.3rem;
+        margin-top: 1rem;
+        background-position-y: 0.4rem;
+        background-position-x: 0.5rem;
+        background-size: 1rem;
+        
+    }
+    .people{
+        width: 96%;
+        height: 1.7rem;
+        padding: 0.3rem;
+        border: none;
+        outline: none;
+        margin-top: 1rem;
+        background-position-y: 0.5rem;
+        background-position-x: 0.5rem;
+        background-size: 1rem;
+    }
+    /* button and custom */
+    
+    /* left sidde complete */
+    /* Start Right  side*/
+    .second{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        height: 20rem;
+        justify-items: center;
+        background-color: hsl(183, 100%, 15%);
+        position: relative;
+        top: 0.1rem;
+        left: 0.1rem;
+        padding-left: 1rem;
+        border-radius: 1rem;
+    }
+    .amount{
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        justify-content: space-around;
+    }
+    
+}
+@media (max-width:470px){
+    .main{
+        width: 100%;
+    }
+    .second{
+        width: 90%;
+    }
+    .tipAmount{
+        margin-left: 2rem;
+    }
+    .total{
+        margin-left: 5rem;
+    }
+}
